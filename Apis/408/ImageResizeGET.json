@@ -1,0 +1,250 @@
+{
+  "Name": "ImageResize",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Inputs": [
+    {
+      "Name": "EntityType",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Description": "this could be changed to Number input type",
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Size",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Description": "Accepted sizes (height will be computed based on the width and aspect ratio):\n- small. a width of 150 or 200 (maybe add xsmall for 150)\n- medium. a width of 300-400\n- large. a width of 800-1000\n- xlarge. the original size",
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "AspectRatio",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0
+        }
+      ]
+    },
+    {
+      "Name": "Quality",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Description": "A number between 0 and 100.\nRecommended values range: 50 - 100",
+      "Parameters": {
+        "Value": ""
+      },
+      "InputTypeStr": "number",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "Description": "defaults",
+      "ActionType": "InjectData",
+      "OrderIndex": 0,
+      "Parameters": {
+        "Data": [
+          {
+            "value": "[Quality=100]",
+            "name": "Quality"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "determine source file id from EntityType, RecordId and AspectRatio",
+      "ActionType": "RunSql",
+      "OrderIndex": 1,
+      "Parameters": {
+        "ConnectionString": "",
+        "QueryTimeout": "",
+        "SqlQuery": "select 253",
+        "BindTokens": "",
+        "OutputTokenName": "SourceFileId",
+        "ExtractColumns": "",
+        "OnError": [],
+        "ShowErrors": false
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "InjectData",
+      "OrderIndex": 2,
+      "Condition": "[Size] == 'small'",
+      "Parameters": {
+        "Data": [
+          {
+            "value": "200",
+            "name": "width"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "InjectData",
+      "OrderIndex": 3,
+      "Condition": "[Size] == 'medium'",
+      "Parameters": {
+        "Data": [
+          {
+            "value": "400",
+            "name": "width"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "InjectData",
+      "OrderIndex": 4,
+      "Condition": "[Size] == 'large'",
+      "Parameters": {
+        "Data": [
+          {
+            "value": "1000",
+            "name": "width"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "Description": "return the original image for xlarge",
+      "ActionType": "FileResponse",
+      "OrderIndex": 5,
+      "Condition": "[Size] == 'xlarge'",
+      "Parameters": {
+        "FileId": "[SourceFileId]",
+        "FileDependencies": "",
+        "CacheKeyDependencies": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "ThumbnailCreation",
+      "OrderIndex": 6,
+      "Parameters": {
+        "File": {
+          "Expression": "[SourceFileId]",
+          "Value": "",
+          "IsExpression": true
+        },
+        "OutputFolder": {
+          "Expression": "/ResizedImages",
+          "Value": "",
+          "IsExpression": true,
+          "Parameters": {}
+        },
+        "Name": "[Size]-[Quality]-[SourceFileId]",
+        "Width": "[width=0]",
+        "Height": "0",
+        "Crop": false,
+        "Stretch": "",
+        "Horizontal": {
+          "Expression": "",
+          "Value": "Center",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "Vertical": {
+          "Expression": "",
+          "Value": "Center",
+          "IsExpression": false,
+          "Parameters": {}
+        },
+        "Compression": "[Quality]",
+        "tokenName": "result",
+        "GenerateBase64Token": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    },
+    {
+      "ActionType": "FileResponse",
+      "OrderIndex": 7,
+      "Parameters": {
+        "FileId": "[result:FileId]",
+        "FileDependencies": "[SourceFileId]",
+        "CacheKeyDependencies": ""
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}
