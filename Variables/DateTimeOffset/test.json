@@ -1,0 +1,19 @@
+{
+  "id": 1003,
+  "namespace": {
+    "id": 3,
+    "name": "DateTimeOffset"
+  },
+  "name": "test",
+  "description": "",
+  "parser": "",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "",
+    "debug": true,
+    "type": "razor"
+  }
+}
