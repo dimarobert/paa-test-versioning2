@@ -1,0 +1,19 @@
+{
+  "id": 3013,
+  "namespace": {
+    "id": 1006,
+    "name": "BulkVerUpdate"
+  },
+  "name": "ProcessVersion",
+  "description": "",
+  "parser": "",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "",
+    "debug": true,
+    "type": "razor"
+  }
+}
