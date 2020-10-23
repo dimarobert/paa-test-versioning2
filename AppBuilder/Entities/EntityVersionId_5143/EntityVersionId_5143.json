@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 9242,
+  "Id": 5140,
+  "VersionId": 5143,
+  "Name": "Parent",
+  "PluralName": "Parents",
+  "Icon": "table",
+  "Type": "UserCreated"
+}
