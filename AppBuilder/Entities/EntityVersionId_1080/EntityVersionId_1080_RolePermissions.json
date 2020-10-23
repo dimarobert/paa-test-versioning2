@@ -1,0 +1,128 @@
+{
+  "5": [
+    {
+      "Id": 2353,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 5,
+      "RoleName": "Citizen Developers",
+      "Value": "all"
+    },
+    {
+      "Id": 2354,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 5,
+      "RoleName": "Citizen Developers",
+      "Value": "true"
+    },
+    {
+      "Id": 2355,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 5,
+      "RoleName": "Citizen Developers",
+      "Value": "all"
+    },
+    {
+      "Id": 2356,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 5,
+      "RoleName": "Citizen Developers",
+      "Value": "all"
+    }
+  ],
+  "6": [
+    {
+      "Id": 2357,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 6,
+      "RoleName": "Admins",
+      "Value": "all"
+    },
+    {
+      "Id": 2358,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 6,
+      "RoleName": "Admins",
+      "Value": "true"
+    },
+    {
+      "Id": 2359,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 6,
+      "RoleName": "Admins",
+      "Value": "all"
+    },
+    {
+      "Id": 2360,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 6,
+      "RoleName": "Admins",
+      "Value": "all"
+    }
+  ],
+  "7": [
+    {
+      "Id": 2361,
+      "PermissionType": {
+        "Id": 1,
+        "Name": "Can View"
+      },
+      "RoleId": 7,
+      "RoleName": "Managers",
+      "Value": "all"
+    },
+    {
+      "Id": 2362,
+      "PermissionType": {
+        "Id": 2,
+        "Name": "Can Add"
+      },
+      "RoleId": 7,
+      "RoleName": "Managers",
+      "Value": "true"
+    },
+    {
+      "Id": 2363,
+      "PermissionType": {
+        "Id": 3,
+        "Name": "Can Edit"
+      },
+      "RoleId": 7,
+      "RoleName": "Managers",
+      "Value": "all"
+    },
+    {
+      "Id": 2364,
+      "PermissionType": {
+        "Id": 4,
+        "Name": "Can Delete"
+      },
+      "RoleId": 7,
+      "RoleName": "Managers",
+      "Value": "all"
+    }
+  ]
+}

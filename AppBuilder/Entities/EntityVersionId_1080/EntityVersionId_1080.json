@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 2123,
+  "Id": 1077,
+  "VersionId": 1080,
+  "Name": "Employee",
+  "PluralName": "Employees",
+  "Icon": "user-circle",
+  "Type": "UserCreated"
+}
