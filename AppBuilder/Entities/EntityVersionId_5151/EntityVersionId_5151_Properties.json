@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 9250,
+    "EntityVersionId": 5151,
+    "Name": "renamed",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false
+  },
+  {
+    "Id": 9254,
+    "EntityVersionId": 5151,
+    "Name": "date4",
+    "Type": {
+      "Id": "DateTime",
+      "Name": "Date and Time",
+      "InputType": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "ValueType": "DateTime",
+        "Length": 8,
+        "Icon": "today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false
+  }
+]
