@@ -1,0 +1,680 @@
+<module type="ActionForm" version="05.00.52">
+    <contentKey />
+    <moduleID>21157</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <iswebslice>false</iswebslice>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+    </modulepermissions>
+    <title>avt.Action Form</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>ab712eb3-7eda-4898-a6dc-e6cb75d00fec</uniqueId>
+    <visibility>Maximized</visibility>
+    <websliceexpirydate>0001-01-01T00:00:00</websliceexpirydate>
+    <webslicettl>0</webslicettl>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Form</definition>
+    <moduledefinition>avt.Action Form</moduledefinition>
+    <content type="ActionForm" version="05.00.52"><![CDATA[&lt;ActionForm&gt;
+  &lt;Fields&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[27859]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[CssStyles]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[this is creating the hover effect to display section orientation changes. the string concatenation is a workaround for tokenization.]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;CssStyles&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cscript type=\&quot;text/javascript\&quot;\u003e\n\nvar styleRules = [\n  \&quot;div[trumbowyg\&quot;+\&quot;]:hover \u003e p[section-orientation\&quot;+\&quot;]::after,\&quot;,\n  \&quot;div[trumbowyg\&quot;+\&quot;]:hover \u003e p[section-orientation\&quot;+\&quot;]::before,\&quot;,\n  \&quot;div[trumbowyg\&quot;+\&quot;]:hover \u003e div[section-orientation\&quot;+\&quot;]::after,\&quot;,\n  \&quot;div[trumbowyg\&quot;+\&quot;]:hover \u003e div[section-orientation\&quot;+\&quot;]::before {\&quot;,\n  \&quot;  border-top: #777 1px solid;\&quot;,\n  \&quot;  color: #555;\&quot;,\n  \&quot;  font-style: oblique;\&quot;,\n  \&quot;  display: block;\&quot;,\n  \&quot;  font-size: 0.8em;\&quot;,\n  \&quot;}\&quot;,\n  \&quot;\&quot;,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e p[section-orientation=\u0027+\u0027\&quot;after landscape\&quot;]::after, \u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e div[section-orientation=\u0027+\u0027\&quot;after landscape\&quot;]::after\u0027,\n  \&quot;{\&quot;,\n  \u0027  content: \&quot;landscape section start\&quot;;\u0027,\n  \&quot;}\&quot;,\n  \&quot;\&quot;,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e p[section-orientation=\u0027+\u0027\&quot;landscape\&quot;]::before, \u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e div[section-orientation=\u0027+\u0027\&quot;landscape\&quot;]::before,\u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e p[section-orientation=\u0027+\u0027\&quot;current landscape\&quot;]::before, \u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e div[section-orientation=\u0027+\u0027\&quot;current landscape\&quot;]::before {\u0027,\n  \u0027  content: \&quot;landscape section start\&quot;;\u0027,\n  \&quot;}\&quot;,\n  \&quot;\&quot;,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e p[section-orientation=\u0027+\u0027\&quot;after portrait\&quot;]::after, \u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e div[section-orientation=\u0027+\u0027\&quot;after portrait\&quot;]::after\u0027,\n  \&quot;{\&quot;,\n  \u0027  content: \&quot;portrait section start\&quot;;\u0027,\n  \&quot;}\&quot;,\n  \&quot;\&quot;,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e p[section-orientation=\u0027+\u0027\&quot;portrait\&quot;]::before, \u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e div[section-orientation=\u0027+\u0027\&quot;portrait\&quot;]::before,\u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e p[section-orientation=\u0027+\u0027\&quot;current portrait\&quot;]::before, \u0027,\n  \u0027div[trumbowyg\u0027+\u0027]:hover \u003e div[section-orientation=\u0027+\u0027\&quot;current portrait\&quot;]::before {\u0027,\n  \u0027  content: \&quot;portrait section start\&quot;;\u0027,\n  \&quot;}\&quot;\n];\n\nvar el = $(\&quot;\u003cstyle type=\\\&quot;text/css\\\&quot;\u003e\&quot; + styleRules.join(\&quot;\\n\&quot;) + \&quot;\u003c/style\u003e\&quot;);\n$(\&quot;head\&quot;).append(el);\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;script type=&quot;text/javascript&quot;&gt;
+
+var styleRules = [
+  &quot;div[trumbowyg&quot;+&quot;]:hover &gt; p[section-orientation&quot;+&quot;]::after,&quot;,
+  &quot;div[trumbowyg&quot;+&quot;]:hover &gt; p[section-orientation&quot;+&quot;]::before,&quot;,
+  &quot;div[trumbowyg&quot;+&quot;]:hover &gt; div[section-orientation&quot;+&quot;]::after,&quot;,
+  &quot;div[trumbowyg&quot;+&quot;]:hover &gt; div[section-orientation&quot;+&quot;]::before {&quot;,
+  &quot;  border-top: #777 1px solid;&quot;,
+  &quot;  color: #555;&quot;,
+  &quot;  font-style: oblique;&quot;,
+  &quot;  display: block;&quot;,
+  &quot;  font-size: 0.8em;&quot;,
+  &quot;}&quot;,
+  &quot;&quot;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; p[section-orientation=&#39;+&#39;&quot;after landscape&quot;]::after, &#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; div[section-orientation=&#39;+&#39;&quot;after landscape&quot;]::after&#39;,
+  &quot;{&quot;,
+  &#39;  content: &quot;landscape section start&quot;;&#39;,
+  &quot;}&quot;,
+  &quot;&quot;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; p[section-orientation=&#39;+&#39;&quot;landscape&quot;]::before, &#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; div[section-orientation=&#39;+&#39;&quot;landscape&quot;]::before,&#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; p[section-orientation=&#39;+&#39;&quot;current landscape&quot;]::before, &#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; div[section-orientation=&#39;+&#39;&quot;current landscape&quot;]::before {&#39;,
+  &#39;  content: &quot;landscape section start&quot;;&#39;,
+  &quot;}&quot;,
+  &quot;&quot;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; p[section-orientation=&#39;+&#39;&quot;after portrait&quot;]::after, &#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; div[section-orientation=&#39;+&#39;&quot;after portrait&quot;]::after&#39;,
+  &quot;{&quot;,
+  &#39;  content: &quot;portrait section start&quot;;&#39;,
+  &quot;}&quot;,
+  &quot;&quot;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; p[section-orientation=&#39;+&#39;&quot;portrait&quot;]::before, &#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; div[section-orientation=&#39;+&#39;&quot;portrait&quot;]::before,&#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; p[section-orientation=&#39;+&#39;&quot;current portrait&quot;]::before, &#39;,
+  &#39;div[trumbowyg&#39;+&#39;]:hover &gt; div[section-orientation=&#39;+&#39;&quot;current portrait&quot;]::before {&#39;,
+  &#39;  content: &quot;portrait section start&quot;;&#39;,
+  &quot;}&quot;
+];
+
+var el = $(&quot;&lt;style type=\&quot;text/css\&quot;&gt;&quot; + styleRules.join(&quot;\n&quot;) + &quot;&lt;/style&gt;&quot;);
+$(&quot;head&quot;).append(el);
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;0&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[27858]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[myTrumbowyg]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;myTrumbowyg&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;trumbowyg&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;InitalValue&quot;:&quot;\u003cp section-orientation=\&quot;current landscape\&quot;\u003ethis should be the first line in the landscape orientation.\u003c/p\u003e\n    \u003cp section-orientation=\&quot;current portrait\&quot;\u003ethis should be the first line in the portrait orientation.\u003c/p\u003e\n\u003ccanvas id=\&quot;example2\&quot; width=\&quot;300\&quot; height=\&quot;300\&quot;\u003e\u003c/canvas\u003e\n    \u003cp\u003e\n        An ordered list:\n        \u003col\u003e\n            \u003cli\u003eCoffee\u003c/li\u003e\n            \u003cli\u003eTea\u003c/li\u003e\n            \u003cli\u003e\n                Milk\n                \u003cul\u003e\n                    \u003cli\u003eCoffee\u003c/li\u003e\n                    \u003cli\u003e\n                        Tea\n                        \u003col\u003e\n                            \u003cli\u003eEarl Grey\u003c/li\u003e\n                            \u003cli\u003eGreen\u003c/li\u003e\n                            \u003cli\u003eRosboh\u003c/li\u003e\n                        \u003c/ol\u003e\n                    \u003c/li\u003e\n                    \u003cli\u003eMilk\u003c/li\u003e\n                \u003c/ul\u003e\n            \u003c/li\u003e\n            \u003cli\u003eWine\u003c/li\u003e\n        \u003c/ol\u003e\n    \u003c/p\u003e\n\n    \u003cp section-orientation=\&quot;current landscape\&quot;\u003ethis should be the first line in the landscape orientation.\u003c/p\u003e\n\n    \u003cp section-orientation=\&quot;after portrait\&quot;\u003e\n        This should be the last line in the previous orientation (landscape).\n    \u003c/p\u003e\n\n    \u003cdiv\u003e\n        This should be the first line in the portrait orientation.\n        \u003cspan style=\&quot;font-style: oblique\&quot;\u003e&#233;crit en oblique.\u003c/span\u003e\n    \u003c/div\u003e\n    \u003cdiv section-orientation=\&quot;landscape\&quot; style=\&quot;font-size:20\&quot;\u003e\n        This should be the first line in the landscape orientation.\n        \u0027current\u0027 should be the default and optional.\n    \u003c/div\u003e\n    \u003c!--\u003cdiv style=\&quot;page-break-before: always\&quot;\u003e\n    New page\n    \u003c/div\u003e--\u003e&quot;,&quot;ImageManager&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;&quot;,&quot;IsExpression&quot;:false},&quot;Buttons&quot;:&quot;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&quot;,&quot;Language&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;en&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;BtnGroups&quot;:[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}],&quot;ButtonDropdowns&quot;:[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}],&quot;Semantic&quot;:true,&quot;DarkTheme&quot;:false,&quot;SaveToReport&quot;:false,&quot;AllowTokens&quot;:false,&quot;RemoveFormatPastedOption&quot;:false,&quot;TagsToRemoveOption&quot;:false,&quot;TagsToRemove&quot;:&quot;&quot;,&quot;TagsToKeepOption&quot;:false,&quot;TagsToKeep&quot;:&quot;&quot;}&lt;/InputData&gt;
+      &lt;InitalValue&gt;&amp;lt;p section-orientation=&quot;current landscape&quot;&amp;gt;this should be the first line in the landscape orientation.&amp;lt;/p&amp;gt;
+    &amp;lt;p section-orientation=&quot;current portrait&quot;&amp;gt;this should be the first line in the portrait orientation.&amp;lt;/p&amp;gt;
+&amp;lt;canvas id=&quot;example2&quot; width=&quot;300&quot; height=&quot;300&quot;&amp;gt;&amp;lt;/canvas&amp;gt;
+    &amp;lt;p&amp;gt;
+        An ordered list:
+        &amp;lt;ol&amp;gt;
+            &amp;lt;li&amp;gt;Coffee&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Tea&amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;
+                Milk
+                &amp;lt;ul&amp;gt;
+                    &amp;lt;li&amp;gt;Coffee&amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;
+                        Tea
+                        &amp;lt;ol&amp;gt;
+                            &amp;lt;li&amp;gt;Earl Grey&amp;lt;/li&amp;gt;
+                            &amp;lt;li&amp;gt;Green&amp;lt;/li&amp;gt;
+                            &amp;lt;li&amp;gt;Rosboh&amp;lt;/li&amp;gt;
+                        &amp;lt;/ol&amp;gt;
+                    &amp;lt;/li&amp;gt;
+                    &amp;lt;li&amp;gt;Milk&amp;lt;/li&amp;gt;
+                &amp;lt;/ul&amp;gt;
+            &amp;lt;/li&amp;gt;
+            &amp;lt;li&amp;gt;Wine&amp;lt;/li&amp;gt;
+        &amp;lt;/ol&amp;gt;
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;p section-orientation=&quot;current landscape&quot;&amp;gt;this should be the first line in the landscape orientation.&amp;lt;/p&amp;gt;
+
+    &amp;lt;p section-orientation=&quot;after portrait&quot;&amp;gt;
+        This should be the last line in the previous orientation (landscape).
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;div&amp;gt;
+        This should be the first line in the portrait orientation.
+        &amp;lt;span style=&quot;font-style: oblique&quot;&amp;gt;&#233;crit en oblique.&amp;lt;/span&amp;gt;
+    &amp;lt;/div&amp;gt;
+    &amp;lt;div section-orientation=&quot;landscape&quot; style=&quot;font-size:20&quot;&amp;gt;
+        This should be the first line in the landscape orientation.
+        &#39;current&#39; should be the default and optional.
+    &amp;lt;/div&amp;gt;
+    &amp;lt;!--&amp;lt;div style=&quot;page-break-before: always&quot;&amp;gt;
+    New page
+    &amp;lt;/div&amp;gt;--&amp;gt;&lt;/InitalValue&gt;
+      &lt;ImageManager&gt;
+        &lt;Expression /&gt;
+        &lt;Value /&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+      &lt;/ImageManager&gt;
+      &lt;Buttons&gt;viewHTML|undo,redo|formatting|Emphasis|superscript,subscript|foreColor,backColor|link|insertImage|Justify|btnGrp-lists|horizontalRule|removeformat|fullscreen&lt;/Buttons&gt;
+      &lt;Language&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;en&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Language&gt;
+      &lt;BtnGroups&gt;[{&quot;name&quot;:&quot;lists&quot;,&quot;value&quot;:&quot;unorderedList orderedList&quot;}]&lt;/BtnGroups&gt;
+      &lt;ButtonDropdowns&gt;[{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;justify-center&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Justify&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;justifyLeft justifyCenter justifyRight justifyFull&quot;,&quot;IsExpression&quot;:false}},{&quot;DropdownIcon&quot;:{&quot;Value&quot;:&quot;bold&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;DropdownName&quot;:{&quot;Value&quot;:&quot;Emphasis&quot;,&quot;IsExpression&quot;:false},&quot;DropdownButtons&quot;:{&quot;Value&quot;:&quot;bold italic underline strikethrough&quot;,&quot;IsExpression&quot;:false}}]&lt;/ButtonDropdowns&gt;
+      &lt;Semantic&gt;True&lt;/Semantic&gt;
+      &lt;DarkTheme&gt;False&lt;/DarkTheme&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;AllowTokens&gt;False&lt;/AllowTokens&gt;
+      &lt;RemoveFormatPastedOption&gt;False&lt;/RemoveFormatPastedOption&gt;
+      &lt;TagsToRemoveOption&gt;False&lt;/TagsToRemoveOption&gt;
+      &lt;TagsToRemove /&gt;
+      &lt;TagsToKeepOption&gt;False&lt;/TagsToKeepOption&gt;
+      &lt;TagsToKeep /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[doc-viewer]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[doc-viewer]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;12&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[27860]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Convert Canvases]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[this is the script that converts canvas elements to img with data (base64) source.]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;ConvertCanvases&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[var tbField = form.fields[&quot;myTrumbowyg&quot;];
+var tbRoot = $(&#39;#&#39; + tbField.id + &#39;+div[&#39; + &#39;trumbowyg]&#39;).first();
+if(!tbRoot.length){
+  console.error(&#39;No Trumbowyg element found in page.&#39;);
+  return false;
+}
+
+var tbCanvases = $(&#39;canvas&#39;, tbRoot);
+
+tbCanvases.each(function(idx, canvas) {
+  var data = canvas.toDataURL();
+  var replacement = $(&#39;&lt;img src=&quot;&#39; + data + &#39;&quot; /&gt;&#39;);
+  $(canvas).replaceWith(replacement);
+});
+debugger;
+scope.updateField(tbField.name, tbRoot.innerHTML);
+return false;]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;button&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-normal&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
+      &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
+      &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
+      &lt;ButtonSize&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;btn-normal&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonSize&gt;
+      &lt;ButtonType&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonType&gt;
+      &lt;ButtonAlign&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonAlign&gt;
+      &lt;ButtonIcon /&gt;
+      &lt;ButtonExecutingActionMessage&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;localize&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonExecutingActionMessage&gt;
+      &lt;ButtonWaitingMessage&gt;Please wait...&lt;/ButtonWaitingMessage&gt;
+      &lt;ConnectedForms /&gt;
+      &lt;Actions /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;2&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;9&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;3&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[27861]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Canvas runner]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[this is not important. it is here to drive the canvas animation.]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;Canvasrunner&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\n\u003cscript type=\&quot;text/javascript\&quot; src=\&quot;http://blobsallad.se/article/article.js\&quot;\u003e\n\u003c/script\u003e\n\n\u003cscript type=\&quot;text/javascript\&quot;\u003e\nsetTimeout(function() {\nvar env;\nvar ctx;\nvar p1, p2;\nvar joint;\nvar dt = 0.05;\nvar width, height;\nvar tempVector;\nvar selectPointmass;\nvar zeroForce = new Vector(0.0, 0.0);\nvar keyboardForce = new Vector(0.0, 0.0);\nvar gravity = new Vector(0.0, 1.0);\nvar savedMouseCoords = null;\n\nfunction timeout()\n{\n  if(selectPointmass != null \u0026\u0026 savedMouseCoords != null)\n    selectPointmass.setPos(savedMouseCoords.x, savedMouseCoords.y);\n\n  p1.addForce(gravity);\n  p2.addForce(gravity);\n\n  p1.move(dt);\n  p2.move(dt);\n\n  p1.setForce(zeroForce);\n  p2.setForce(zeroForce);\n\n  if(env.collision(p1.getPos(), p1.getPrevPos()) == true)\n    p1.setFriction(0.1);\n  else\n    p1.setFriction(0.01);\n\n  if(env.collision(p2.getPos(), p2.getPrevPos()) == true)\n    p2.setFriction(0.1);\n  else\n    p2.setFriction(0.01);\n\n  joint.sc();\n\n  ctx.clearRect(0, 0, width, height);\n  env.draw(ctx, width);\n  joint.draw(ctx, width);\n  p1.draw(ctx, width);\n  p2.draw(ctx, width);\n\n  setTimeout(function () {\n    timeout();\n  }, 30);\n}\n\nfunction initExample2(aWidth, aHeight)\n{\n    var canvas = document.getElementById(\u0027example2\u0027);\n    ctx = canvas.getContext(\u00272d\u0027);\n\n    width = aWidth;\n    height = aHeight;\n    tempVector = new Vector(0.0, 0.0);\n    selectPointmass = null;\n\n    env = new Environment(0.15, 0.15, 0.70, 0.70);\n    p1 = new PointMass(0.2, 0.6, 1.0);\n    p2 = new PointMass(0.6, 0.5, 1.0);\n    joint = new Joint(p1, p2, 0.8, 1.2);\n\n    function getMouseCoords(event)\n    {\n      if(event == null)\n      {\n        event = window.event;\n      }\n      if(event == null)\n      {\n        return null;\n      }\n      if(event.pageX || event.pageY)\n      {\n        return {x:event.pageX / width, y:event.pageY / width};\n      }\n      return null;\n    }\n    document.onmousedown = function(event)\n    {\n      var mouseCoords;\n\n      mouseCoords = getMouseCoords(event);\n      savedMouseCoords = mouseCoords;\n      if(mouseCoords == null)\n        return;\n\n      tempVector.setX(mouseCoords.x);\n      tempVector.setY(mouseCoords.y);\n\n      if(tempVector.dist(p1.getPos()) \u003c 0.1)\n        selectPointmass = p1;\n      else if(tempVector.dist(p2.getPos()) \u003c 0.1)\n        selectPointmass = p2;\n    }\n    document.onmouseup = function(event)\n    {\n      selectPointmass = null;\n    }\n    document.onmousemove = function(event)\n    {\n      var mouseCoords;\n\n      mouseCoords = getMouseCoords(event);\n      savedMouseCoords = mouseCoords;\n    }\n\n    document.onkeydown = function(event)\n    {\n      var keyCode;\n\n      if(event == null)\n        keyCode = window.event.keyCode;\n      else\n        keyCode = event.keyCode;\n\n      var force = 10.0;\n\n      switch(keyCode)\n      {\n        case 37:\n          keyboardForce.setX(-force);\n          keyboardForce.setY(0.0);\n          p1.addForce(keyboardForce);\n          p2.addForce(keyboardForce);\n          break;\n        case 38:\n          keyboardForce.setX(0.0);\n          keyboardForce.setY(-force);\n          p1.addForce(keyboardForce);\n          p2.addForce(keyboardForce);\n          break;\n        case 39:\n          keyboardForce.setX(force);\n          keyboardForce.setY(0.0);\n          p1.addForce(keyboardForce);\n          p2.addForce(keyboardForce);\n          break;\n        case 40:\n          keyboardForce.setX(0.0);\n          keyboardForce.setY(force);\n          p1.addForce(keyboardForce);\n          p2.addForce(keyboardForce);\n          break;\n        case 71:\n          if(gravity.getY() == 1.0)\n            gravity.setY(0.0);\n          else\n            gravity.setY(1.0);\n          break;\n\n        default:\n          break;\n      }\n    }\n\n    timeout();\n}\n\ninitExample2(300, 300);\n}, 2000);\n\u003c/script\u003e\n&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://blobsallad.se/article/article.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+setTimeout(function() {
+var env;
+var ctx;
+var p1, p2;
+var joint;
+var dt = 0.05;
+var width, height;
+var tempVector;
+var selectPointmass;
+var zeroForce = new Vector(0.0, 0.0);
+var keyboardForce = new Vector(0.0, 0.0);
+var gravity = new Vector(0.0, 1.0);
+var savedMouseCoords = null;
+
+function timeout()
+{
+  if(selectPointmass != null &amp;&amp; savedMouseCoords != null)
+    selectPointmass.setPos(savedMouseCoords.x, savedMouseCoords.y);
+
+  p1.addForce(gravity);
+  p2.addForce(gravity);
+
+  p1.move(dt);
+  p2.move(dt);
+
+  p1.setForce(zeroForce);
+  p2.setForce(zeroForce);
+
+  if(env.collision(p1.getPos(), p1.getPrevPos()) == true)
+    p1.setFriction(0.1);
+  else
+    p1.setFriction(0.01);
+
+  if(env.collision(p2.getPos(), p2.getPrevPos()) == true)
+    p2.setFriction(0.1);
+  else
+    p2.setFriction(0.01);
+
+  joint.sc();
+
+  ctx.clearRect(0, 0, width, height);
+  env.draw(ctx, width);
+  joint.draw(ctx, width);
+  p1.draw(ctx, width);
+  p2.draw(ctx, width);
+
+  setTimeout(function () {
+    timeout();
+  }, 30);
+}
+
+function initExample2(aWidth, aHeight)
+{
+    var canvas = document.getElementById(&#39;example2&#39;);
+    ctx = canvas.getContext(&#39;2d&#39;);
+
+    width = aWidth;
+    height = aHeight;
+    tempVector = new Vector(0.0, 0.0);
+    selectPointmass = null;
+
+    env = new Environment(0.15, 0.15, 0.70, 0.70);
+    p1 = new PointMass(0.2, 0.6, 1.0);
+    p2 = new PointMass(0.6, 0.5, 1.0);
+    joint = new Joint(p1, p2, 0.8, 1.2);
+
+    function getMouseCoords(event)
+    {
+      if(event == null)
+      {
+        event = window.event;
+      }
+      if(event == null)
+      {
+        return null;
+      }
+      if(event.pageX || event.pageY)
+      {
+        return {x:event.pageX / width, y:event.pageY / width};
+      }
+      return null;
+    }
+    document.onmousedown = function(event)
+    {
+      var mouseCoords;
+
+      mouseCoords = getMouseCoords(event);
+      savedMouseCoords = mouseCoords;
+      if(mouseCoords == null)
+        return;
+
+      tempVector.setX(mouseCoords.x);
+      tempVector.setY(mouseCoords.y);
+
+      if(tempVector.dist(p1.getPos()) &lt; 0.1)
+        selectPointmass = p1;
+      else if(tempVector.dist(p2.getPos()) &lt; 0.1)
+        selectPointmass = p2;
+    }
+    document.onmouseup = function(event)
+    {
+      selectPointmass = null;
+    }
+    document.onmousemove = function(event)
+    {
+      var mouseCoords;
+
+      mouseCoords = getMouseCoords(event);
+      savedMouseCoords = mouseCoords;
+    }
+
+    document.onkeydown = function(event)
+    {
+      var keyCode;
+
+      if(event == null)
+        keyCode = window.event.keyCode;
+      else
+        keyCode = event.keyCode;
+
+      var force = 10.0;
+
+      switch(keyCode)
+      {
+        case 37:
+          keyboardForce.setX(-force);
+          keyboardForce.setY(0.0);
+          p1.addForce(keyboardForce);
+          p2.addForce(keyboardForce);
+          break;
+        case 38:
+          keyboardForce.setX(0.0);
+          keyboardForce.setY(-force);
+          p1.addForce(keyboardForce);
+          p2.addForce(keyboardForce);
+          break;
+        case 39:
+          keyboardForce.setX(force);
+          keyboardForce.setY(0.0);
+          p1.addForce(keyboardForce);
+          p2.addForce(keyboardForce);
+          break;
+        case 40:
+          keyboardForce.setX(0.0);
+          keyboardForce.setY(force);
+          p1.addForce(keyboardForce);
+          p2.addForce(keyboardForce);
+          break;
+        case 71:
+          if(gravity.getY() == 1.0)
+            gravity.setY(0.0);
+          else
+            gravity.setY(1.0);
+          break;
+
+        default:
+          break;
+      }
+    }
+
+    timeout();
+}
+
+initExample2(300, 300);
+}, 2000);
+&lt;/script&gt;
+]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;3&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[27862]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Submit]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;Submit&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;button&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;CausesValidation&quot;:true,&quot;IsDefaultButton&quot;:true,&quot;ButtonSize&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-normal&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonType&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;btn-info&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonAlign&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonIcon&quot;:&quot;&quot;,&quot;ButtonExecutingActionMessage&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;localize&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;ButtonWaitingMessage&quot;:&quot;Please wait...&quot;,&quot;ConnectedForms&quot;:&quot;&quot;,&quot;Actions&quot;:[]}&lt;/InputData&gt;
+      &lt;CausesValidation&gt;True&lt;/CausesValidation&gt;
+      &lt;IsDefaultButton&gt;True&lt;/IsDefaultButton&gt;
+      &lt;ButtonSize&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;btn-normal&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonSize&gt;
+      &lt;ButtonType&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;btn-info&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonType&gt;
+      &lt;ButtonAlign&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonAlign&gt;
+      &lt;ButtonIcon /&gt;
+      &lt;ButtonExecutingActionMessage&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;localize&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/ButtonExecutingActionMessage&gt;
+      &lt;ButtonWaitingMessage&gt;Please wait...&lt;/ButtonWaitingMessage&gt;
+      &lt;ConnectedForms /&gt;
+      &lt;Actions /&gt;
+      &lt;Value&gt;&lt;![CDATA[]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;0&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;4&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;9&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;3&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+  &lt;/Fields&gt;
+  &lt;Settings&gt;
+    &lt;Title&gt;avt.Action Form&lt;/Title&gt;
+    &lt;CssName&gt;avt-action-form&lt;/CssName&gt;
+    &lt;Version&gt;5.10.0&lt;/Version&gt;
+    &lt;Build&gt;5.10.5&lt;/Build&gt;
+    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
+    &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
+    &lt;FrontEndTemplate&gt;&amp;lt;div&amp;gt;&amp;lt;span&amp;gt;&amp;lt;a href=&quot;[FormUrl]&quot;&amp;gt;Click here to change.&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/div&amp;gt;&lt;/FrontEndTemplate&gt;
+    &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
+    &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
+    &lt;LoadingBarsColor&gt;#00c0ef&lt;/LoadingBarsColor&gt;
+    &lt;LoadingBackgroundColor&gt;#fff&lt;/LoadingBackgroundColor&gt;
+    &lt;LoadingText /&gt;
+    &lt;TabsProLoading&gt;False&lt;/TabsProLoading&gt;
+    &lt;LayoutHtml&gt;&lt;![CDATA[&amp;lt;div style=&amp;quot;width: 40%; float: left; margin: 0px 20px 0px 0px;&amp;quot;&amp;gt;[Fields:NewField]&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;width: 40%; float: left; margin: 0px 20px 0px 0px;&amp;quot;&amp;gt;[Fields:NewField]&amp;lt;/div&amp;gt;
+&amp;lt;div style=&amp;quot;clear: both;&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;]]&gt;&lt;/LayoutHtml&gt;
+    &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
+    &lt;LabelAlign&gt;right&lt;/LabelAlign&gt;
+    &lt;LabelWidth&gt;3&lt;/LabelWidth&gt;
+    &lt;FieldSpacing&gt;normal&lt;/FieldSpacing&gt;
+    &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
+    &lt;ModuleId&gt;21157&lt;/ModuleId&gt;
+    &lt;ModuleVersion&gt;5.10.5&lt;/ModuleVersion&gt;
+    &lt;TabId&gt;2085&lt;/TabId&gt;
+    &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
+    &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
+    &lt;FormTemplate&gt;bootstrap&lt;/FormTemplate&gt;
+    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/bootstrap&lt;/FormTemplateFolder&gt;
+    &lt;ModuleId&gt;21157&lt;/ModuleId&gt;
+    &lt;IsDebug&gt;False&lt;/IsDebug&gt;
+    &lt;EnableReports&gt;False&lt;/EnableReports&gt;
+    &lt;ClientSideValidation&gt;True&lt;/ClientSideValidation&gt;
+    &lt;RequiredFieldAllowsWhiteSpace&gt;False&lt;/RequiredFieldAllowsWhiteSpace&gt;
+    &lt;OnFocusoutValidation&gt;False&lt;/OnFocusoutValidation&gt;
+    &lt;ShowTooltips&gt;False&lt;/ShowTooltips&gt;
+    &lt;ShowTooltipTitle&gt;True&lt;/ShowTooltipTitle&gt;
+    &lt;ShowFormCondition /&gt;
+    &lt;InitJs&gt;&lt;![CDATA[]]&gt;&lt;/InitJs&gt;
+    &lt;PopupWidth&gt;400&lt;/PopupWidth&gt;
+    &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
+    &lt;PopupHeight&gt;300&lt;/PopupHeight&gt;
+    &lt;jQueryTheme&gt;sunny&lt;/jQueryTheme&gt;
+    &lt;SubmitHiddenFields&gt;False&lt;/SubmitHiddenFields&gt;
+    &lt;IncludeBootstrap&gt;True&lt;/IncludeBootstrap&gt;
+    &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
+    &lt;FloatingLabels&gt;False&lt;/FloatingLabels&gt;
+    &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
+    &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
+    &lt;Background /&gt;
+    &lt;TextColor /&gt;
+    &lt;Padding&gt;0&lt;/Padding&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;BaseId&gt;dnn21157&lt;/BaseId&gt;
+    &lt;PopupName /&gt;
+    &lt;LeftSidebarHtml /&gt;
+    &lt;RightSidebarHtml /&gt;
+    &lt;RootClasses /&gt;
+    &lt;LocalizedStringsUrl&gt;/DesktopModules/DnnSharp/ActionForm/AdminApi.ashx?method=GetLocalization&amp;amp;locale=en-US&amp;amp;section=FrontEnd&lt;/LocalizedStringsUrl&gt;
+    &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
+  &lt;/Settings&gt;
+  &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;ActionInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;ActionType&gt;ShowError&lt;/ActionType&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;LastModified&gt;2020-04-28T16:36:16.007&lt;/LastModified&gt;
+      &lt;LastModifiedBy&gt;1&lt;/LastModifiedBy&gt;
+      &lt;ActionData&gt;{&quot;Message&quot;:&quot;&amp;lt;p&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;myTrumbowyg: [myTrumbowyg]&amp;lt;br /&amp;gt;&quot;}&lt;/ActionData&gt;
+      &lt;ModuleId&gt;21157&lt;/ModuleId&gt;
+      &lt;FieldName&gt;Submit&lt;/FieldName&gt;
+      &lt;EventName&gt;click&lt;/EventName&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/ActionInfo&gt;
+  &lt;/Actions&gt;
+&lt;/ActionForm&gt;]]></content>
+</module>
