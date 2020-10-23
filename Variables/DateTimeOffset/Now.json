@@ -1,0 +1,19 @@
+{
+  "id": 3,
+  "namespace": {
+    "id": 3,
+    "name": "DateTimeOffset"
+  },
+  "name": "Now",
+  "description": "",
+  "parser": "",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "",
+    "debug": false,
+    "type": "razor"
+  }
+}
