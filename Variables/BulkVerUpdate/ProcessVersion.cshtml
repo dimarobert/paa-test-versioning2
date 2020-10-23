@@ -1,0 +1,39 @@
+@inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
+@{
+    string result = "";
+    try {
+        // TknParams.v;
+        var v = Tokens.TknParams.GetValue("v");
+        if (v == null) {
+            result = "error: Required parameter v not supplied.";
+        } else {
+            result = Process(v.ToString());
+        }
+    } catch (Exception ex) {
+        result = "error: Unexpected. " + ex.ToString();
+    }
+}
+
+@result
+
+@functions {
+
+    string Process(string newVersion) {
+        Version version;
+        var success = Version.TryParse(newVersion, out version);
+        if (!success) {
+            return "error: Could not parse version: '" + newVersion + "'.";
+        }
+        version = new Version(version.Major, GetValidVersionPart(version.Minor), GetValidVersionPart(version.Build));
+
+        return FormatVersion(version);
+    }
+
+    string FormatVersion(Version version) {
+        return string.Format("{0}.{1}.{2}", version.Major.ToString("D2"), version.Minor.ToString("D2"), version.Build.ToString("D2"));
+    }
+
+    int GetValidVersionPart(int part) {
+        return part >= 0 ? part : 0;
+    }
+}
