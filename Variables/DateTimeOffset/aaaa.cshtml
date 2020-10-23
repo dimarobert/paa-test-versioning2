@@ -1,0 +1,10 @@
+@inherits avt.MyTokens.Core.ParsingEngine.RazorTemplate
+@{
+    var str = "";
+    foreach (var cookieKey in System.Web.HttpContext.Current.Request.Cookies.AllKeys) {
+        str += cookieKey + ": " + System.Web.HttpContext.Current.Request.Cookies.Get(cookieKey).Value + "<br/>";
+    }
+
+}
+
+@str
