@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 1128,
+  "Id": 79,
+  "VersionId": 79,
+  "Name": "Company",
+  "PluralName": "Companies",
+  "Icon": "building",
+  "Type": "UserCreated"
+}
