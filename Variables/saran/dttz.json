@@ -1,0 +1,19 @@
+{
+  "id": 3010,
+  "namespace": {
+    "id": 1,
+    "name": "saran"
+  },
+  "name": "dttz",
+  "description": "",
+  "parser": "",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "",
+    "debug": false,
+    "type": "razor"
+  }
+}
