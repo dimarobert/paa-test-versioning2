@@ -1,0 +1,19 @@
+{
+  "id": 3012,
+  "namespace": {
+    "id": 1006,
+    "name": "BulkVerUpdate"
+  },
+  "name": "GetMaxVersionsJson",
+  "description": "",
+  "parser": "",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "~/bin/Newtonsoft.Json.dll",
+    "debug": true,
+    "type": "razor"
+  }
+}
