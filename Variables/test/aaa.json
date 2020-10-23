@@ -1,0 +1,19 @@
+{
+  "id": 4013,
+  "namespace": {
+    "id": 2,
+    "name": "test"
+  },
+  "name": "aaa",
+  "description": "",
+  "parser": "",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "language": "csharp",
+    "additionalAssemblies": "~/bin/DnnSharp.Common.dll\n~/bin/DnnSharp.Common2.dll\n~/bin/PlantAnApp_Core/netstandard.dll\n~/bin/PlantAnApp.ActionEngine.dll",
+    "debug": true,
+    "type": "razor"
+  }
+}
