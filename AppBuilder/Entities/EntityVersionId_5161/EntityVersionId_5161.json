@@ -1,0 +1,11 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 10264,
+  "Id": 5158,
+  "VersionId": 5161,
+  "Name": "ent2",
+  "PluralName": "ent2s",
+  "Icon": "table",
+  "Type": "UserCreated"
+}
