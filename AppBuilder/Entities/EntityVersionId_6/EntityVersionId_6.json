@@ -1,0 +1,18 @@
+{
+  "DisplayInMenu": true,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 8,
+  "ShowDashboardModule": false,
+  "Id": 6,
+  "UniqueId": "00000000-0000-0000-0000-000000000000",
+  "VersionId": 6,
+  "EntityTabId": 58,
+  "Name": "test",
+  "PluralName": "tests",
+  "CreatedDate": "2021-08-31T10:51:08.04",
+  "CreatedBy": "SuperUser Account",
+  "Icon": "table",
+  "NamespaceId": 2,
+  "Type": "UserCreated",
+  "EnableIndexing": false
+}
