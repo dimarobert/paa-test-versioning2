@@ -1,0 +1,19 @@
+{
+  "DisplayInMenu": false,
+  "ParentPageId": -1,
+  "RecordNamePropertyId": 4,
+  "ShowDashboardModule": false,
+  "Id": 2,
+  "UniqueId": "00000000-0000-0000-0000-000000000000",
+  "VersionId": 2,
+  "EntityTabId": -1,
+  "Name": "Role",
+  "PluralName": "Roles",
+  "CreatedDate": "2021-07-28T15:23:11.2433333",
+  "CreatedBy": "",
+  "Icon": "users-cog",
+  "NamespaceId": 1,
+  "Type": "BuiltIn",
+  "BuiltInType": "Roles",
+  "EnableIndexing": false
+}
