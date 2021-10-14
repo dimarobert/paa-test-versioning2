@@ -1,0 +1,138 @@
+{
+  "Name": "Organization",
+  "Description": "Returns the information of a Organization record in JSON object format.",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 2,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.ReadEntity.938ce66b-a974-4e62-ba9f-42d6845af659",
+      "OrderIndex": 0,
+      "Parameters": {
+        "RecordId": "[RecordId]",
+        "OutputToken": "Record"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "938ce66b-a974-4e62-ba9f-42d6845af659"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 1,
+      "Parameters": {
+        "HttpCode": "200 OK",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[RecordId]"
+          },
+          {
+            "name": "name",
+            "value": "[Record:name]"
+          },
+          {
+            "name": "nr",
+            "value": "[Record:nr]"
+          },
+          {
+            "name": "dec",
+            "value": "[Record:dec]"
+          },
+          {
+            "name": "bl",
+            "value": "[Record:bl]"
+          },
+          {
+            "name": "date",
+            "value": "[Record:date]"
+          },
+          {
+            "name": "dt",
+            "value": "[Record:dt]"
+          },
+          {
+            "name": "email",
+            "value": "[Record:email]"
+          },
+          {
+            "name": "lt",
+            "value": "[Record:lt]"
+          },
+          {
+            "name": "dto",
+            "value": "[Record:dto]"
+          },
+          {
+            "name": "mony",
+            "value": "[Record:mony]"
+          },
+          {
+            "name": "phone",
+            "value": "[Record:phone]"
+          },
+          {
+            "name": "txt",
+            "value": "[Record:txt]"
+          },
+          {
+            "name": "time",
+            "value": "[Record:time]"
+          },
+          {
+            "name": "link",
+            "value": "[Record:link]"
+          },
+          {
+            "name": "owner",
+            "value": "[Record:owner]"
+          },
+          {
+            "name": "employeeRole",
+            "value": "[Record:employeeRole]"
+          },
+          {
+            "name": "logo",
+            "value": "[Record:logo]"
+          },
+          {
+            "name": "doc",
+            "value": "[Record:doc]"
+          }
+        ],
+        "Headers": []
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
