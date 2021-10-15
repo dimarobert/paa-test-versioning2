@@ -1,0 +1,327 @@
+{
+  "Name": "Organization",
+  "Description": "Creates a new record of type Organization",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 1,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Inputs": [
+    {
+      "Name": "name",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"name is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "nr",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "dec",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "bl",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "date",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "dt",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "email",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "lt",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 7,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "dto",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 8,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "mony",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 9,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "phone",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 10,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "txt",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 11,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "time",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 12,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "link",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 13,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "owner",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 14,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "employeeRole",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 15,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "logo",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 16,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "doc",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 17,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "Actions": [
+    {
+      "ActionType": "PlantAnApp.CreateEntity.938ce66b-a974-4e62-ba9f-42d6845af659",
+      "OrderIndex": 0,
+      "Parameters": {
+        "OutputToken": "CreatedRecordId",
+        "name": "[name]",
+        "nr": "[nr]",
+        "dec": "[dec]",
+        "bl": "[bl]",
+        "date": "[date]",
+        "dt": "[dt]",
+        "email": "[email]",
+        "lt": "[lt]",
+        "dto": "[dto]",
+        "mony": "[mony]",
+        "phone": "[phone]",
+        "txt": "[txt]",
+        "time": "[time]",
+        "link": "[link]",
+        "owner": "[owner]",
+        "employeeRole": "[employeeRole]",
+        "logo": "[logo]",
+        "doc": "[doc]"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.CreateEntity",
+        "EntityIdentifier": "938ce66b-a974-4e62-ba9f-42d6845af659"
+      }
+    },
+    {
+      "ActionType": "PlantAnApp.ReadEntity.938ce66b-a974-4e62-ba9f-42d6845af659",
+      "OrderIndex": 1,
+      "Parameters": {
+        "RecordId": "[CreatedRecordId]",
+        "OutputToken": "CreatedRecord"
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.ReadEntity",
+        "EntityIdentifier": "938ce66b-a974-4e62-ba9f-42d6845af659"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "OrderIndex": 2,
+      "Parameters": {
+        "HttpCode": "201 Created",
+        "Fields": [
+          {
+            "name": "Id",
+            "value": "[CreatedRecordId]"
+          },
+          {
+            "name": "name",
+            "value": "[CreatedRecord:name]"
+          },
+          {
+            "name": "nr",
+            "value": "[CreatedRecord:nr]"
+          },
+          {
+            "name": "dec",
+            "value": "[CreatedRecord:dec]"
+          },
+          {
+            "name": "bl",
+            "value": "[CreatedRecord:bl]"
+          },
+          {
+            "name": "date",
+            "value": "[CreatedRecord:date]"
+          },
+          {
+            "name": "dt",
+            "value": "[CreatedRecord:dt]"
+          },
+          {
+            "name": "email",
+            "value": "[CreatedRecord:email]"
+          },
+          {
+            "name": "lt",
+            "value": "[CreatedRecord:lt]"
+          },
+          {
+            "name": "dto",
+            "value": "[CreatedRecord:dto]"
+          },
+          {
+            "name": "mony",
+            "value": "[CreatedRecord:mony]"
+          },
+          {
+            "name": "phone",
+            "value": "[CreatedRecord:phone]"
+          },
+          {
+            "name": "txt",
+            "value": "[CreatedRecord:txt]"
+          },
+          {
+            "name": "time",
+            "value": "[CreatedRecord:time]"
+          },
+          {
+            "name": "link",
+            "value": "[CreatedRecord:link]"
+          },
+          {
+            "name": "owner",
+            "value": "[CreatedRecord:owner]"
+          },
+          {
+            "name": "employeeRole",
+            "value": "[CreatedRecord:employeeRole]"
+          },
+          {
+            "name": "logo",
+            "value": "[CreatedRecord:logo]"
+          },
+          {
+            "name": "doc",
+            "value": "[CreatedRecord:doc]"
+          }
+        ],
+        "Headers": [
+          {
+            "name": "Location",
+            "value": "http://localhost:9001/api/Organization?recordId=[CreatedRecordId]"
+          }
+        ]
+      },
+      "IsEnabled": true,
+      "ExecutionType": "OnExecute",
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}
