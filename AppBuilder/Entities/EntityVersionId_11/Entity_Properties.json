@@ -1,0 +1,416 @@
+[
+  {
+    "Id": 15,
+    "UniqueId": "cdd6fd0d-0eee-416e-a4a7-16fc24143c9f",
+    "EntityVersionId": 11,
+    "Name": "name",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": true,
+    "IsSearchable": true,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 1
+  },
+  {
+    "Id": 16,
+    "UniqueId": "ac839dd1-7ab6-4513-a153-bb0853c2aea0",
+    "EntityVersionId": 11,
+    "Name": "nr",
+    "Type": {
+      "Id": "Integer",
+      "Name": "Number (Integer)",
+      "InputType": {
+        "Id": "Integer",
+        "Name": "Number (Integer)",
+        "ValueType": "Integer",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 2
+  },
+  {
+    "Id": 17,
+    "UniqueId": "b27c62db-609e-4288-b83a-55928ab7aaea",
+    "EntityVersionId": 11,
+    "Name": "dec",
+    "Type": {
+      "Id": "Decimal",
+      "Name": "Number (Decimal)",
+      "InputType": {
+        "Id": "Decimal",
+        "Name": "Number (Decimal)",
+        "ValueType": "Decimal",
+        "Length": 4,
+        "Icon": "looks_one"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 3
+  },
+  {
+    "Id": 18,
+    "UniqueId": "507bafe1-889f-4c5b-88d5-16fb54ab4bea",
+    "EntityVersionId": 11,
+    "Name": "bl",
+    "Type": {
+      "Id": "Boolean",
+      "Name": "Boolean",
+      "InputType": {
+        "Id": "Boolean",
+        "Name": "Boolean",
+        "ValueType": "Boolean",
+        "Length": 1,
+        "Icon": "check_circle_outline"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 4
+  },
+  {
+    "Id": 19,
+    "UniqueId": "faeb6017-e459-49a1-81de-684cad0eaa2f",
+    "EntityVersionId": 11,
+    "Name": "date",
+    "Type": {
+      "Id": "Date",
+      "Name": "Date",
+      "InputType": {
+        "Id": "Date",
+        "Name": "Date",
+        "ValueType": "Date",
+        "Length": 3,
+        "Icon": "calendar_today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 5
+  },
+  {
+    "Id": 20,
+    "UniqueId": "9f0a9b71-335a-4d2a-8829-1a63f6f294f7",
+    "EntityVersionId": 11,
+    "Name": "dt",
+    "Type": {
+      "Id": "DateTime",
+      "Name": "Date and Time",
+      "InputType": {
+        "Id": "DateTime",
+        "Name": "Date and Time",
+        "ValueType": "DateTime",
+        "Length": 8,
+        "Icon": "today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 6
+  },
+  {
+    "Id": 21,
+    "UniqueId": "fe7ebe1d-66b1-478b-a122-07930687ff3a",
+    "EntityVersionId": 11,
+    "Name": "email",
+    "Type": {
+      "Id": "Email",
+      "Name": "Email",
+      "InputType": {
+        "Id": "Email",
+        "Name": "Email",
+        "ValueType": "String",
+        "Length": 320,
+        "Icon": "mail_outline"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 7
+  },
+  {
+    "Id": 22,
+    "UniqueId": "af9e245a-f362-4192-b95d-d27228c17ea8",
+    "EntityVersionId": 11,
+    "Name": "lt",
+    "Type": {
+      "Id": "LargeText",
+      "Name": "Large Text",
+      "InputType": {
+        "Id": "LargeText",
+        "Name": "Large Text",
+        "ValueType": "String",
+        "Length": 2147483647,
+        "Icon": "notes"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 8
+  },
+  {
+    "Id": 23,
+    "UniqueId": "dd4a2caa-5aec-4d9e-b773-36393900b358",
+    "EntityVersionId": 11,
+    "Name": "dto",
+    "Type": {
+      "Id": "DateTimeOffset",
+      "Name": "Local Date and Time",
+      "InputType": {
+        "Id": "DateTimeOffset",
+        "Name": "Local Date and Time",
+        "ValueType": "DateTimeOffset",
+        "Length": 10,
+        "Icon": "calendar_today"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 9
+  },
+  {
+    "Id": 24,
+    "UniqueId": "057cf34e-435a-47bd-8045-7a2d2ebccc18",
+    "EntityVersionId": 11,
+    "Name": "mony",
+    "Type": {
+      "Id": "Money",
+      "Name": "Money",
+      "InputType": {
+        "Id": "Money",
+        "Name": "Money",
+        "ValueType": "Decimal",
+        "Length": 17,
+        "Icon": "attach_money"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 10
+  },
+  {
+    "Id": 25,
+    "UniqueId": "d7052fbf-5874-405f-bc54-f83d0a2998fb",
+    "EntityVersionId": 11,
+    "Name": "phone",
+    "Type": {
+      "Id": "Phone",
+      "Name": "Phone",
+      "InputType": {
+        "Id": "Phone",
+        "Name": "Phone",
+        "ValueType": "String",
+        "Length": 15,
+        "Icon": "phone"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 11
+  },
+  {
+    "Id": 26,
+    "UniqueId": "bd377d6b-85b0-4467-bf20-5662d18ae250",
+    "EntityVersionId": 11,
+    "Name": "txt",
+    "Type": {
+      "Id": "Text",
+      "Name": "Text",
+      "InputType": {
+        "Id": "Text",
+        "Name": "Text",
+        "ValueType": "String",
+        "Length": 450,
+        "Icon": "short_text"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 12
+  },
+  {
+    "Id": 27,
+    "UniqueId": "63eeb21b-97c1-4b53-bfab-aeee0c353b01",
+    "EntityVersionId": 11,
+    "Name": "time",
+    "Type": {
+      "Id": "Time",
+      "Name": "Time",
+      "InputType": {
+        "Id": "Time",
+        "Name": "Time",
+        "ValueType": "Time",
+        "Length": 5,
+        "Icon": "access_time"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 13
+  },
+  {
+    "Id": 28,
+    "UniqueId": "444207ef-eca9-445a-9e70-e445cc39945b",
+    "EntityVersionId": 11,
+    "Name": "link",
+    "Type": {
+      "Id": "Url",
+      "Name": "Url",
+      "InputType": {
+        "Id": "Url",
+        "Name": "Url",
+        "ValueType": "String",
+        "Length": 2000,
+        "Icon": "laptop"
+      }
+    },
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 14
+  },
+  {
+    "Id": 29,
+    "UniqueId": "f17fe14f-bbc2-4eea-90e3-7a4afb2627c2",
+    "EntityVersionId": 11,
+    "Name": "owner",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 1,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 15
+  },
+  {
+    "Id": 30,
+    "UniqueId": "8e37c5f4-2276-4154-b9ff-994cfaf07322",
+    "EntityVersionId": 11,
+    "Name": "employeeRole",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 2,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 16
+  },
+  {
+    "Id": 31,
+    "UniqueId": "a9d528bd-89e2-44c8-8f80-4fdf9f4dc7cc",
+    "EntityVersionId": 11,
+    "Name": "logo",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 4,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 17
+  },
+  {
+    "Id": 32,
+    "UniqueId": "d3b58a82-9341-47e1-b548-e338ccf471c4",
+    "EntityVersionId": 11,
+    "Name": "doc",
+    "Type": {
+      "Id": "EntityRef",
+      "Name": "Entity Reference",
+      "InputType": {
+        "Id": "EntityRef",
+        "Name": "Entity Reference",
+        "ValueType": "EntityRef",
+        "Length": 4
+      }
+    },
+    "EntityVersionRefId": 3,
+    "IsDeleted": false,
+    "IsRequired": false,
+    "IsSearchable": false,
+    "IsFilterable": false,
+    "IsSortable": false,
+    "OrderIndex": 18
+  }
+]
